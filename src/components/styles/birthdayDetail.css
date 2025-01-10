@@ -1,0 +1,71 @@
+.event-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust spacing between cards */
+    padding: 20px;
+    gap: 10px; /* Minimized gap between cards */
+}
+
+.event-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 300px; /* Increased card width */
+    flex-grow: 1; /* Allow cards to evenly take up space */
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.event-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.event-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.event-card p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+.event-card .book-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.event-list {
+    gap: 15px; /* Reduced gap between cards */
+}
+
+@media (max-width: 1200px) {
+    .event-card {
+        max-width: 250px; /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .event-list {
+        justify-content: center; /* Center-align on small screens */
+    }
+    .event-card {
+        max-width: 220px;
+    }
+}
+

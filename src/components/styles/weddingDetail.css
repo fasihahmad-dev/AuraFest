@@ -1,0 +1,161 @@
+/* src/WeddingDetails.css */
+
+/* General Page Layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Allow body to take full height for footer positioning */
+}
+
+.wedding-details-header {
+    background-color: #333;
+    color: white;
+    padding: 8px 10px; /* Reduced padding */
+    text-align: center;
+}
+
+.wedding-details-search-container {
+    text-align: center;
+    margin-top: 5px; /* Further reduced margin */
+}
+
+#wedding-details-searchInput {
+    width: 50%;
+    max-width: 300px; /* Reduced max-width */
+    padding: 8px; /* Reduced padding */
+    font-size: 14px; /* Reduced font size */
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.wedding-details-hero-section {
+    text-align: center;
+    padding: 20px 10px; /* Further reduced padding */
+    background-color: #eee;
+}
+
+.wedding-details-hero-section h1 {
+    font-size: 1.6em; /* Further reduced font size */
+    margin-bottom: 5px; /* Reduced margin */
+}
+
+.wedding-details-hero-section p {
+    font-size: 0.8em; /* Further reduced font size */
+    color: #666;
+}
+
+/* Event Cards Layout */
+.wedding-details-event-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; /* Reduced gap between cards */
+    padding: 15px; /* Reduced padding */
+    flex-grow: 1; /* Allow the event list to grow and fill space */
+}
+
+.wedding-details-event-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px; /* Reduced padding */
+    width: 250px; /* Further reduced width of cards */
+    text-align: center;
+    display: flex; /* Use flexbox for positioning */
+    flex-direction: column; /* Arrange items in a column */
+    justify-content: flex-start; /* Space items from top to bottom */
+    height: auto; /* Allow height to adjust based on content */
+    transition: transform 0.3s ease;
+    margin-bottom: 15px; /* Reduced margin below each card */
+}
+
+.wedding-details-event-card:hover {
+    transform: scale(1.03); /* Reduced scale effect */
+}
+
+.wedding-details-event-card img {
+    width: 100%;
+    height: 120px; /* Further reduced height for better fit */
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 5px; /* Further reduced margin */
+}
+
+.wedding-details-event-card h3 {
+    margin: 0;
+    font-size: 1.2em; /* Reduced font size */
+}
+
+.wedding-details-event-card p {
+    color: #555;
+    font-size: 0.8em; /* Further reduced font size */
+    margin: 10px 0; /* Add margin for spacing */
+    flex-grow: 1; /* Allow paragraph to grow */
+    overflow: hidden; /* Prevent overflow */
+    text-overflow: ellipsis; /* Show ellipsis if text is too long */
+    display: -webkit-box; /* Required for the next two lines */
+    -webkit-box-orient: vertical; /* Vertical orientation */
+}
+
+.wedding-details-event-card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 12px; /* Maintain padding */
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9em; /* Slightly larger font size */
+    margin-top: auto; /* Space between content and button */
+    width: 100%; /* Make button full width */
+}
+
+.wedding-details-event-card button:hover {
+    background-color: #0056b3;
+}
+
+#wedding-details-noEventMessage {
+    display: none;
+    text-align: center;
+    font-size: 1.2em; /* Reduced font size */
+    color: red;
+}
+
+.wedding-details-footer {
+    text-align: center;
+    padding: 10px; /* Further reduced padding */
+    background-color: #333;
+    color: white;
+    margin-top: auto; /* Push footer to the bottom */
+    flex-shrink: 0; /* Prevent footer from shrinking */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .wedding-details-event-list {
+        flex-direction: column; /* Stack cards on small screens */
+        align-items: center;
+    }
+
+    #wedding-details-searchInput {
+        width: 80%; /* Make the search bar wider on small screens */
+    }
+
+    .wedding-details-hero-section h1 {
+        font-size: 1.4em; /* Further reduce font size on small screens */
+    }
+
+    .wedding-details-hero-section p {
+        font-size: 0.7em; /* Reduce paragraph font size */
+    }
+
+    .wedding-details-event-card {
+        width: 90%; /* Full width on smaller screens */
+        height: auto; /* Allow height to adjust on smaller screens */
+    }
+}

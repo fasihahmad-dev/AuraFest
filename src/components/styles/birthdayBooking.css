@@ -1,0 +1,137 @@
+/* Global body styling */
+body {
+    background-color: #f8f9fa; /* Light background for a clean look */
+    font-family: 'Arial', sans-serif; /* Use a modern sans-serif font */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the booking form */
+.birthdayBooking-form-container {
+    max-width: 600px; /* Restrict width for better readability */
+    margin: 50px auto; /* Center the container */
+    padding: 20px;
+    background-color: white; /* White background for contrast */
+    border-radius: 8px; /* Smooth rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Modal Header and Body Styling */
+.birthdayBooking-modal-header,
+.birthdayBooking-modal-body {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Section Header Styling */
+.birthdayBooking-your-details {
+    font-size: 1.5rem; /* Larger font for prominence */
+    font-weight: bold;
+    color: #333; /* Dark gray text for readability */
+    margin-bottom: 15px;
+}
+
+/* Form Label Styling */
+.birthdayBooking-form-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Input and Select Styling */
+.birthdayBooking-form-control,
+.birthdayBooking-form-select {
+    padding: 10px;
+    font-size: 1rem; /* Larger font for easier typing */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Smooth rounded corners */
+    width: 100%;
+    margin-bottom: 15px; /* Space between inputs */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+/* Submit Button Styling */
+.birthdayBooking-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff; /* Primary blue color */
+    border: none;
+    border-radius: 5px; /* Smooth rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+.birthdayBooking-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Modal Content Styling */
+.birthdayBooking-modal-content {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow for modals */
+    padding: 20px;
+}
+
+/* Close Button Styling */
+.birthdayBooking-btn-close {
+    font-size: 1.2rem;
+    color: #333;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* Success Button Styling */
+.birthdayBooking-btn-success {
+    background-color: #28a745; /* Success green */
+    color: white;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Success Button Hover Effect */
+.birthdayBooking-btn-success:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Secondary Button Styling */
+.birthdayBooking-btn-secondary {
+    background-color: #6c757d; /* Neutral gray */
+    color: white;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Secondary Button Hover Effect */
+.birthdayBooking-btn-secondary:hover {
+    background-color: #5a6268; /* Darker gray on hover */
+}
+
+/* Loading Spinner Styling */
+.birthday-loading {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 20px auto;
+    color: #007bff;
+}
+
+/* Footer Styling */
+.birthday-footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #6c757d; /* Subtle gray */
+    font-size: 0.9rem;
+}
